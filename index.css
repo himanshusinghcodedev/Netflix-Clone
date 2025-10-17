@@ -1,0 +1,599 @@
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+    height: fit-content;
+}
+.main{
+    background-image: url("Assets/images/ImgBcg.jpg");
+    background-position: center center;
+    height: 90vh;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size:  max(1550px, 165vh);
+}
+.main .nav{
+    height: 10vh;
+    max-width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}  
+
+.main .nav select{
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.main .nav input{
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.main .box{
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;    
+}
+.nav img{
+    height: 50px;
+    width: 150px;
+}
+.herotxt{
+        height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+#txtmain{
+    position: relative;
+    /* top: -110px; */
+    width: 45%;
+    text-align: center;
+    color: white;
+    font-size: 65px;
+    font-weight: bold;
+}
+#txt2{
+    color:white;
+    font-size: 24px;
+    margin-top: 25px;
+    font-weight: 500;
+}
+#txt3{
+    color:white;
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: 300;
+}
+.mail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+}
+.mail input[type="email"]{
+    height:60px;
+    width: 500px;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.mail ::placeholder{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.mail input[type="button"]{
+    height: 60px;
+    width: 150px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+.mail input[type="button"]:hover{
+    background-color: #e50914;
+    cursor: pointer;
+}
+.main .nav input:hover{
+        background-color: #e50914;
+    cursor: pointer;
+}
+.bodysection{
+    box-sizing: border-box;
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    height: 3vh;
+    width: 100%;
+    content: '';
+    top:-84px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border: solid .95rem transparent;
+        border-top-left-radius: 50% 100%;
+    border-top-right-radius: 40% 100%;
+    border-bottom: none;
+background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+ background-clip: padding-box;
+}
+.separatebody{
+    height: 1500px;
+    width: 100%;
+    content: '';
+    position: relative;
+    top: -80px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    margin-top: -.25rem;
+     background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 50%, rgba(0, 0, 0, 0.1) 100%), black;
+    border-radius: inherit;
+}
+.trendtxt{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    height: 5vh;
+    width: 80%;
+    position: relative;
+    top: 25px;
+    left: 155px;
+}
+.imgbox1{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    top: 30px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+
+}
+.box1{
+    height: 250px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    left: 155px;
+    background-image: url("Assets/images/AAAABemK-aHwX63DztqbWwQ0xnYGvHYuoYkQ3l3ZIwftPjmuJxC461m-FOI7ZN_bzolsgGd_3_dbacKgr5mV292UjjEYJGCgIubIQOs.webp");
+    background-repeat: no-repeat;
+}
+.box1 p{
+    color: rgb(15, 15, 15);
+    font-size: 100px;
+    font-weight: bold;
+    position: relative;
+    top: 150px;
+    left: -10px;
+    text-shadow:
+        0 0 8px #fff,
+        0 0 16px #fff,
+        0 0 32px #fff,
+        0 0 2px #fff,
+        2px 2px 0 #fff,
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff;
+        margin-right: 30px;
+}
+.box2{
+    height: 250px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    left: 155px;
+    background-image: url("Assets/images/AAAABQyNT9Mdd2wR9KVzh2iO_T3rTEydvDSlf0_4EnLYou_zEgzr5juLda9NmQT2srWqiFh-7PKVRzRgoB5Eg-xA5DQHFPeSd1MHDzryhJqxIeayTICsi6DMPp4I8uH8NdtaV5Ji.webp");
+    background-repeat: no-repeat;
+}
+.box2 p{
+    color: rgb(15, 15, 15);
+    font-size: 100px;
+    font-weight: bold;
+    position: relative;
+    top: 150px;
+    left: -10px;
+    text-shadow:
+        0 0 8px #fff,
+        0 0 16px #fff,
+        0 0 32px #fff,
+        0 0 2px #fff,
+        2px 2px 0 #fff,
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff;
+        margin-right: 30px;
+}
+.box3{
+    height: 250px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    left: 155px;
+    background-image: url("Assets/images/AAAABVCzd41nKAatdvwy0DT1M5D-xSzSdBdKklegmczhdyKYvEEwunaUUcE5xr7Zjkn9Ywhm3n-2g0wi5s1nB3J1bAhe8t3j0ENBjxw.webp");
+    background-repeat: no-repeat;
+}
+.box3 p{
+    color: rgb(15, 15, 15);
+    font-size: 100px;
+    font-weight: bold;
+    position: relative;
+    top: 150px;
+    left: -10px;
+    text-shadow:
+        0 0 8px #fff,
+        0 0 16px #fff,
+        0 0 32px #fff,
+        0 0 2px #fff,
+        2px 2px 0 #fff,
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff;
+        margin-right: 30px;
+}
+.box4{
+    height: 250px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    left: 155px;
+    background-image: url("Assets/images/AAAABWJF3fOVc0WbJWEYriu_3uQ9lgkyfv0VrBguejqSrYC0b7AfDDsPJ0IFUMseCvvtqjbKvUegYyhw0rDMS_O44wupyfnLPemAXvHP8sBGapu-n4-8y-D6rdQclPui4gvqvwiE.webp");
+    background-repeat: no-repeat;
+}
+.box4 p{
+    color: rgb(15, 15, 15);
+    font-size: 100px;
+    font-weight: bold;
+    position: relative;
+    top: 150px;
+    left: -10px;
+    text-shadow:
+        0 0 8px #fff,
+        0 0 16px #fff,
+        0 0 32px #fff,
+        0 0 2px #fff,
+        2px 2px 0 #fff,
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff;
+        margin-right: 30px;
+}
+.box5{
+    height: 250px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    left: 155px;
+    background-image: url("Assets/images/AAAABWrTjWMrsToh9vAoz8rKrhSSHdJW6bmhL8Lvv63zCy1lo3O1TFqvZH4U80xS1vDJJV00sc97Ntd2b1Y1vh3v4SIs60pAtWC6pottJ80j5h4ITJPEURiTJEH4O_a47L1S0qlG.webp");
+    background-repeat: no-repeat;
+}
+.box5 p{
+    color: rgb(15, 15, 15);
+    font-size: 100px;
+    font-weight: bold;
+    position: relative;
+    top: 150px;
+    left: -10px;
+    text-shadow:
+        0 0 8px #fff,
+        0 0 16px #fff,
+        0 0 32px #fff,
+        0 0 2px #fff,
+        2px 2px 0 #fff,
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff;
+        margin-right: 30px;
+}
+.box6{
+    height: 250px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    left: 155px;
+    background-image: url("Assets/images/AAAABYgqP-FM9E4u1IbMtOKfqd2ha2nti95bI-jg9xOXxJAcO6Xj9hwy02O4dFu0-oZ_jSi-NQFHPZQwn1NO7eA5LVqqGZIfy9YPjg1G6GzZPMRODawEZXb_7Ks9Ryjl-xUANYCs.webp");
+    background-repeat: no-repeat;
+}
+.box6 p{
+    color: rgb(15, 15, 15);
+    font-size: 100px;
+    font-weight: bold;
+    position: relative;
+    top: 150px;
+    left: -10px;
+    text-shadow:
+        0 0 8px #fff,
+        0 0 16px #fff,
+        0 0 32px #fff,
+        0 0 2px #fff,
+        2px 2px 0 #fff,
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff;
+        margin-right: 30px;
+}
+.trendtxt1{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    height: 5vh;
+    width: 80%;
+    position: relative;
+    top: 50px;
+    left: 155px;
+}
+.reasonbox{
+    height: 320px;
+    width: 84%;
+    position: relative;
+    top: 70px;
+    left: 155px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.rbox{
+    position: relative;
+    z-index: 5;
+    height: 250px;
+    width: 300px;
+    background: linear-gradient(180deg, #231b45 0%, #0d0a14 100%);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);;
+    font-weight: 400;
+}
+.t1{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+.b1 .i1{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+}
+.b1 .i1{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 60px;
+}
+.b1 .i2{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 60px;
+}
+.b1 .i3{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 60px;
+}
+.b1 .i4{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 60px;
+}
+.rbox .l1{
+    margin-top: 20px;
+    margin-left: 4px;    
+}
+.faqsection{
+    height: fit-content;
+    width: 100%;
+    position: relative;
+}
+.Faq{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    width: 80%;
+    position: relative;
+    top: 50px;
+    left: 155px;
+}
+.faqBox{
+    height: 72px;
+    width: 84%;
+    position: relative;
+    top: 70px;
+    left: 155px;
+    margin-bottom: 8px;
+    background-color: rgb(45,45,45);
+    display: flex;
+}
+.faqBox .text{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px;
+}
+.faqBox .p{
+    color: white;
+    font-size: 60px;
+    font-weight: lighter;
+    position: absolute;
+    right: 15px;
+
+}
+.faqBox:hover{
+    background-color: rgb(70,70,70);
+    cursor: pointer;
+}
+.footer{
+    height: 250px;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rtow{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    height: 5vh;
+    width: 80%;
+    position: relative;
+    top: 40px;
+    left: 23%;
+}
+.footmail{
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .footer input[type="email"]{
+    height:50px;
+    width: 550px;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.footer ::placeholder{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer input[type="button"]{
+    height: 50px;
+    width: 200px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+.footer input[type="button"]:hover{
+    background-color: #e50914;
+    cursor: pointer;
+}
+.footer .nav input:hover{
+        background-color: #e50914;
+    cursor: pointer;
+}
+.bottom{
+    color: rgba(255, 255, 255, 0.701);
+    font-size: 14px;
+    font-weight: 400;
+    height: 5vh;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+ul{
+    color: rgba(255, 255, 255, 0.701);
+    font-size: 14px;
+    font-weight: 400;
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    list-style: none;
+    line-height: 20px;
+}
+li{
+    width: 245px;
+    margin-bottom: 10px;
+}
+a{
+    color: rgba(255, 255, 255, 0.701);
+    font-size: 14px;
+    font-weight: 400;
+}
+.lasttxt{
+    color: rgba(255, 255, 255, 0.701);
+    font-size: 12px;
+    font-weight: 400;
+    height: 200px;
+    width: 80%;
+    position: relative;
+    top: 50px;
+    margin-bottom: 20px;
+}
+#lang1{
+    height: 30px;
+    width: 90px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.ques1{
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    top: 40px;
+}
+.lt1{
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    bottom: 50px;
+}
+.last1{
+    color: rgb(68,142,244);
+    font-size: 12px;
+    font-weight: 400;
+}
